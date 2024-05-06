@@ -1,0 +1,119 @@
+.question{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    // justify-content: space-evenly;
+    .question_heading{
+        height: 5vh;
+        width: 100%;
+        margin-bottom: 15px;
+        h4{
+            color: rgb(220, 210, 210);
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+    }
+    .question_data{
+        height: auto;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        // align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        .question_card{
+            height: 6.5vh;
+            width: 35rem;
+            background-color: #424040;
+            margin: 10px;
+            margin-left: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            
+
+            .text{
+                width:16rem;
+                margin: 5px;
+                color: aliceblue;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .question_links{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                .ide{
+                    color: azure;
+                    margin-top:1.2vh;
+                    cursor: pointer;
+                    &:hover{
+                        color: rgb(242, 182, 62);
+                    }
+                }
+                .icons{
+                    height: 3.5vh;
+                    width: 3.5vh;
+                    background-color: white;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    color: #424040;
+                    margin-top: 1vh;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgb(101, 250, 101);
+                    }
+                }
+            }
+            .level{
+                font-weight: bold;
+                font-size: 12px;
+                width: 3rem;
+                &.easy{
+                    color: rgb(26, 199, 26);
+                }
+                &.medium{
+                    color: gold;
+                }
+                &.hard{
+                    color: tomato;
+                }
+            }
+            &.skeleton{
+                animation: pulse 1.5s infinite; 
+                @keyframes pulse {
+                    0% {
+                      opacity: 0.6;
+                    }
+                    50% {
+                      opacity: 1;
+                    }
+                    100% {
+                      opacity: 0.6;
+                    }
+                  }
+            }
+        }
+
+    }
+    .error{
+        width: 100%;
+        height: 75.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: tomato;
+        img{
+            height:  45vh;
+            margin-left: 100%;
+        }
+    }
+}

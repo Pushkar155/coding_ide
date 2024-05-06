@@ -1,0 +1,25 @@
+.small_banner{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .small_banner_card{
+        height: 8vh;
+        width: 92%;
+        border-radius: 10px;
+        background:#c0fdff ;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+        h2{
+            font-size:19px;
+            font-family: "Bangers", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(42, 41, 41);
+        }
+    }
+
+}

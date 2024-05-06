@@ -1,0 +1,74 @@
+.sheets {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+//   gap: 100px;
+  .sheets_card {
+    height: 25vh;
+    width: 60vh;
+    border-radius: 20px;
+    display: flex;
+    .sheets_card_left{
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10vh;
+        padding-left: 40px;
+        align-items: flex-start;
+        justify-content: center;
+        h2{
+            font-family: "Bangers", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            color: rgb(60, 56, 56);
+            
+        }
+        button{
+            height: 30px;
+            width: 80px;
+            background-color:#282828;
+            color: white;
+            border: 0px solid black;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-family: "Roboto", sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            
+            .rocket{
+              transition: all 0.2s ease;
+              margin-left: 3px;
+              font-size: 16px;
+              // transform: rotate(15deg);
+            }
+            &:hover{
+              background-color: #1b1b1b;
+              color: rgb(255, 255, 255);
+              // border: 2px solid rgb(22, 21, 21);
+          }
+          &:hover .rocket {
+            transform: rotate(-45deg);
+          }
+        }
+    }
+    .sheets_card_right{
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 22vh;
+        }
+    }
+
+  }
+}
